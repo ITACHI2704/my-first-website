@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web dev</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("kkr.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none; 
+            float: right;
+            margin-top: 25px;
+
+        }
+
+        ul li {
+            display: inline-block;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .logo {
+            float: left;
+            height: auto;
+            max-width: 1200px;
+            margin: 20px;
+            color: rgb(187, 206, 195);
+            font-family: sans-serif;
+            font-size: 95px;
+        }
+
+        ul li.active a {
+            background-color: white;
+            color: black;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .title h1 {
+            color: aliceblue;
+            font-size: 50px;
+
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .btn {
+            border: 1px solid white;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            transition: 0.6s ease;
+            margin: 6px;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p> <i>KKR</i></p>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#"> Contact us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>KKR CREATION</h1>
+        </div>
+
+        <div class="button">
+            <a href="#" class="btn"> WATCH VIDEO</a>
+            <a href="#" class="btn"> LEARN MORE</a>
+        </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
